@@ -19,7 +19,7 @@ var Posts = function () {
       };
 
       feed.toXml = function () {
-        var response = '<feed xmlns="http://www.w3.org/2005/Atom"><title>Withouttheloop.com</title>';
+        var response = '<feed xmlns="http://www.w3.org/2005/Atom"><title>rarelyupdated.net</title>';
         _(this.gists).each(function (gist) {
           response += toEntryNode(gist);
         });
@@ -52,7 +52,7 @@ var Posts = function () {
   };
 
   function getGists(successCallback, app) {
-    var gistListUrl = 'https://api.github.com/users/liammclennan/gists',
+    var gistListUrl = 'https://api.github.com/users/adamchester/gists',
       age = (new Date() - lastGet) / 60000;
 
     console.log(age);
